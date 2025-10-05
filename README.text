@@ -1,20 +1,41 @@
-                                                                     Selenium Framework project for testing e-commerce website.
-                                                                     
-The project uses Selenium with Java, Maven and TestNG framework. Designed with POM pattern. Supports Multiple Browsers. Supports Headless Running. Generates ExtentReport with screenshots of failed scripts.
+# 🧪 Selenium E-Commerce Testing Framework  
 
+A comprehensive **Selenium automation testing framework** built using **Java**, **Maven**, and **TestNG** — designed with the **Page Object Model (POM)** pattern for scalability and maintainability.  
 
-                                                                                I tested these functionalities:
-                                                                                        Registration
-                                                                                         Logging in
-                                                                                         Logging out
-                                                                                      Changing Language
-                                                                                Entering email for Newsletter
-                                                                                           Searching
-                                                                         Saving and removing Items from the Wishlist
-                                                                           Adding and removing Items from the cart
-                                                                                           Checking out
-                                                                                          Closing Account
+---
 
+## 🚀 Project Overview  
 
+This framework automates key user journeys of an **e-commerce website** to ensure core functionality and user experience remain consistent across updates.  
 
-                                                 Note: This project was for learning purposes and used a real website so some tests may fail over time.Thanks
+### ✨ Key Features  
+
+- ✅ **Selenium WebDriver with Java** for UI automation  
+- 🧩 **Maven** for dependency management and build automation  
+- 🧪 **TestNG** for test management, grouping, and parallel execution  
+- 🧱 **Page Object Model (POM)** for clean code and reusability  
+- 🌐 **Cross-Browser Support** (Chrome, Edge, Firefox, etc.)  
+- 🕶️ **Headless Execution** for CI/CD integration  
+- 📊 **ExtentReports** with screenshots for failed test cases  
+
+---
+
+## 🧰 Functionalities Tested  
+
+| Category | Test Description |
+|-----------|------------------|
+| 📝 Registration | Create a new user account |
+| 🔐 Login | Authenticate existing users |
+| 🚪 Logout | End user session securely |
+| 🌍 Language Change | Switch website language |
+| 📧 Newsletter | Subscribe using email |
+| 🔍 Search | Search for products |
+| 💖 Wishlist | Add and remove items |
+| 🛒 Cart | Add and remove items |
+| 💳 Checkout | Complete purchase flow |
+| ❌ Account Deletion | Close user account |
+
+---
+
+## 🧱 Project Architecture  
+
