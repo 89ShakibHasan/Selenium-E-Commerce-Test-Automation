@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+    <listeners>
+        <listener class-name="listeners.Listeners"/>
+    </listeners>>
+    <test name="Jumia Tests">
+    <parameter name="BrowserName" value="edge"></parameter>
+        <classes>
+            <class name="register.RegisterTests">
+                <methods>
+                    <include name="testInvalidEmail"/>
+                    <include name="testEmptyEmail"/>
+                    <include name="testShortPasswordRegistration"/>
+                    <include name="testUnMatchedPasswords"/>
+                    <include name="testShortFNameRegistration"/>
+                    <include name="testingInvalidNames"/>
+                    <include name="testInvalidPhoneRegistration"/>
+                    <include name="successfulRegistration"/>
+                </methods>
+            </class>
+            <class name="login.LoginTests">
+                <methods>
+                    <include name="testWrongPasswordLogin"/>
+                    <include name="testSuccessfulLogin"/>
+                </methods>
+            </class>
+            <class name="login.LogoutTests">
+                <methods>
+                    <include name="testSuccessfulLogOut"/>
+                </methods>
+            </class>
+            <class name="search.SearchTests">
+                <methods>
+                    <include name="testingRelevantSearchResults"/>
+                </methods>
+            </class>
+            <class name="savedItems.WishListTests">
+                <methods>
+                    <include name="testingAddingItemsToWishList"/>
+                    <include name="testingRemovingItemsFromWishList"/>
+                </methods>
+            </class>
+            <class name="E2E.BuyingAProductE2E">
+                <methods>
+                    <include name="testEmptyAddressCheckOut"/>
+                    <include name="testEmptyCityCheckOut"/>
+                    <include name="testSuccessfulCheckout"/>
+                </methods>
+            </class>
+            <class name="cart.CartTests">
+                <methods>
+                    <include name="testProductInCart"/>
+                    <include name="testDeletingProductFromCart"/>
+                </methods>
+            </class>
+            <class name="homePage.ChangingLanguageTest">
+                <methods>
+                    <include name="changeLanguageToArabic"/>
+                </methods>
+            </class>
+            <class name="homePage.NewsLetterEmail">
+                <methods>
+                    <include name="testEnteringEmailForNews"/>
+                    <include name="testEnteringAlreadySentEmailForNews"/>
+                </methods>
+            </class>
+            <class name="E2E.BuyingMultipleProductsTest">
+                <methods>
+                    <include name="purchaseMultipleProductsE2E"/>
+                </methods>
+            </class>
+            <class name="fail.TestToFail">
+                <methods>
+                    <include name="changeLanguageToArabicFailing"/>
+                </methods>
+            </class>
+            <class name="closeAccount.ClosingAccount">
+                <methods>
+                    <include name="closingAccount"/>
+                </methods>
+            </class>
+
+        </classes>
+    </test>
+</suite>
